@@ -46,7 +46,6 @@ npm start
   - __Product Owner__: Phil Elauria
   - __Scrum Master__: Dave Mun
   - __Development Team Members__: Essam Al Joubori, Dave Mun, Phil Elauria
-  - 
   
 # Roadmap
 
