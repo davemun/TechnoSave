@@ -1,16 +1,17 @@
 var Promise = require("bluebird");
 var request = Promise.promisify(require('request'));
- 
-    //==============Walmart API URIs======================
-    var searchUrl = 'http://api.walmartlabs.com/v1/search';
-    var itemIDLookupUrl = 'http://api.walmartlabs.com/v1/items/';
-    var APIKey = 'en9ypax2f2ju9mrnmxqmzj9w';
-    //==============Walmart API URIs======================
 
-    //==============BestBuy API URIs======================
-    var BBsearchUrl = 'http://api.remix.bestbuy.com/v1/products';
-    var BBAPIKey = '3fywvy298naxeed665ex82z5';
-    //==============BestBuy API URIs======================
+var config = require('config');
+//==============Walmart API URIs======================
+var searchUrl = config.get('APIKeys.WalMart.searchUrl');
+var itemIDLookupUrl = config.get('APIKeys.WalMart.itemIDLookupUrl');
+var APIKey = config.get('APIKeys.WalMart.key');
+//==============Walmart API URIs======================
+
+//==============BestBuy API URIs======================
+var BBsearchUrl = config.get('APIKeys.BestBuy.searchUrl');
+var BBAPIKey = config.get('APIKeys.BestBuy.key');
+//==============BestBuy API URIs======================
  
 module.exports = {
   parser : function(req, res){
