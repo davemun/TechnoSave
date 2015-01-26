@@ -1,0 +1,14 @@
+{
+  // API Keys
+  "APIKeys": {
+    "BestBuy": {
+      "searchUrl": "http://api.remix.bestbuy.com/v1/products",
+      "key": "3fywvy298naxeed665ex82z5"
+    },
+    "WalMart": {
+      "searchUrl": "http://api.walmartlabs.com/v1/search",
+      "itemIDLookupUrl": "http://api.walmartlabs.com/v1/items/",
+      "key": "en9ypax2f2ju9mrnmxqmzj9w"
+    }
+  }
+}
