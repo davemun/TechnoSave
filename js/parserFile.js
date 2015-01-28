@@ -18,7 +18,7 @@ module.exports = {
     //create itemsList array of user inputs, whitespace sanitized and put in array
     var itemsList = req.body.items.replace(/ /g,'').split(','),
         output = [],
-        max = 10,        //number of matching requests per API per item
+        max = 3,        //number of matching requests per API per item
         APIs = 2,       //number of APIs were using
         completed = 0,  //number of completed async http req
         queued = itemsList.length*APIs*max; //number of queued async http req
